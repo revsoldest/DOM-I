@@ -41,8 +41,15 @@ const siteContent = {
 // let logo = document.getElementById("logo-img");
 // logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-const logoImg = document.getElementById("logo-img");
+// imgs
+const logoImg = document.getElementById('logo-img');
 logoImg.setAttribute('src', siteContent['nav']['img-src'])
 
-const ctaImg = document.getElementById("cta-img");
+const ctaImg = document.getElementById('cta-img');
 ctaImg.setAttribute('src', siteContent['cta']['img-src'])
+
+const middleImg = document.getElementById('middle-img');
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
+
+
+// big title and btn
