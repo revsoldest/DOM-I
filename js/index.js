@@ -53,3 +53,11 @@ middleImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
 
 
 // big title and btn
+
+// h1
+const ctaH1 = document.querySelector('h1');
+ctaH1.textContent = (siteContent['cta']['h1'])
+
+// button
+const btn = document.querySelector('button');
+btn.textContent = (siteContent['cta']['button'])
