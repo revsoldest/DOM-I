@@ -9,7 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   "cta": {
-    "h1": "DOM  Is  Awesome",
+    "h1": "DOM \n Is \n Awesome",
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -28,7 +28,7 @@ const siteContent = {
   },
   "contact": {
     "contact-h4" : "Contact",
-    "address" : "123 Way 456 Street Somewhere, USA",
+    "address" : "123 Way 456 Street \n Somewhere, USA",
     "phone" : "1 (888) 888-8888",
     "email" : "sales@greatidea.io",
   },
@@ -55,8 +55,9 @@ middleImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
 // big title and btn
 
 // h1
-const ctaH1 = document.querySelector('h1');
-ctaH1.textContent = (siteContent['cta']['h1'])
+const ctaH1 = document.getElementsByTagName('h1')[0];
+ctaH1.innerText = (siteContent['cta']['h1'])
+
 
 // button
 const btn = document.querySelector('button');
@@ -111,8 +112,8 @@ const contactH4 = document.querySelectorAll('h4')[5];
 contactH4.textContent = (siteContent['contact']['contact-h4'])
 
 // Contact Address
-const contactAddress = document.querySelectorAll('p')[5];
-contactAddress.textContent = (siteContent['contact']['address'])
+const contactAddress = document.getElementsByTagName('p')[5];
+contactAddress.innerText = (siteContent['contact']['address'])
 
 // Contact Phone
 const contactPhone = document.querySelectorAll('p')[6];
@@ -142,3 +143,19 @@ for(let i = 0; i < changeColor.length; i++){
   const changeColors = changeColor[i];
   changeColors.style.color = 'green';
 }
+
+// nav append and prepend
+
+let firstNav = document.createElement("a");
+firstNav.href = "#";
+firstNav.textContent = "Home";
+firstNav.style.color = "green";
+
+let lastNav = document.createElement("a");
+lastNav.href = "#";
+lastNav.textContent = "FAQ";
+lastNav.style.color = "green";
+
+const newNav = document.querySelector("nav");
+newNav.prepend(firstNav);
+newNav.append(lastNav); 
