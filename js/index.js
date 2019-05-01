@@ -65,12 +65,14 @@ btn.textContent = (siteContent['cta']['button'])
 
 // Main Content Top
 
+// Features 
 const featuresH4 = document.querySelectorAll('h4')[0];
 featuresH4.textContent = (siteContent['main-content']['features-h4'])
 
 const featuresP = document.querySelectorAll('p')[0];
 featuresP.textContent = (siteContent['main-content']['features-content'])
 
+// About
 const aboutH4 = document.querySelectorAll('h4')[1];
 aboutH4.textContent = (siteContent['main-content']['about-h4'])
 
@@ -79,3 +81,28 @@ aboutP.textContent = (siteContent['main-content']['about-content'])
 
 
 // Main Content Bottom
+
+// Services
+const servicesH4 = document.querySelectorAll('h4')[2];
+servicesH4.textContent = (siteContent['main-content']['services-h4'])
+
+const servicesP = document.querySelectorAll('p')[2];
+servicesP.textContent = (siteContent['main-content']['services-content'])
+
+// Product 
+const productH4 = document.querySelectorAll('h4')[3];
+productH4.textContent = (siteContent['main-content']['product-h4'])
+
+const productP = document.querySelectorAll('p')[3];
+productP.textContent = (siteContent['main-content']['product-content'])
+
+// Vision 
+const visionH4 = document.querySelectorAll('h4')[4];
+visionH4.textContent = (siteContent['main-content']['vision-h4'])
+
+const visionP = document.querySelectorAll('p')[4];
+visionP.textContent = (siteContent['main-content']['vision-content'])
+
+
+// Contact Info
+
