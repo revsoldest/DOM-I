@@ -131,3 +131,14 @@ const footerP = document.querySelector('footer p');
 footerP.textContent = (siteContent['footer']['copyright'])
 
 // Nav 
+
+const nav = document.querySelectorAll('nav a');
+nav.forEach((link, i) => {
+  link.textContent = siteContent.nav[`nav-item-${i+1}`]
+});
+
+const changeColor = document.querySelectorAll('nav a');
+for(let i = 0; i < changeColor.length; i++){
+  const changeColors = changeColor[i];
+  changeColors.style.color = 'green';
+}
