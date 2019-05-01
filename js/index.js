@@ -106,17 +106,28 @@ visionP.textContent = (siteContent['main-content']['vision-content'])
 
 // Contact Info
 
+// Contact title
 const contactH4 = document.querySelectorAll('h4')[5];
 contactH4.textContent = (siteContent['contact']['contact-h4'])
 
+// Contact Address
 const contactAddress = document.querySelectorAll('p')[5];
 contactAddress.textContent = (siteContent['contact']['address'])
 
+// Contact Phone
 const contactPhone = document.querySelectorAll('p')[6];
 contactPhone.textContent = (siteContent['contact']['phone'])
 
+// Contact Email
 const contactEmail = document.querySelectorAll('p')[7];
 contactEmail.textContent = (siteContent['contact']['email'])
 
+// note next time  do  '.contact h4' and '.contact p'[0] - [3] or you are going to have alot of number like a above
 
 //footer
+
+// Footer Copyright
+const footerP = document.querySelector('footer p');
+footerP.textContent = (siteContent['footer']['copyright'])
+
+// Nav 
