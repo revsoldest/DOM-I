@@ -9,7 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   "cta": {
-    "h1": "DOM Is Awesome",
+    "h1": "DOM  Is  Awesome",
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -61,3 +61,21 @@ ctaH1.textContent = (siteContent['cta']['h1'])
 // button
 const btn = document.querySelector('button');
 btn.textContent = (siteContent['cta']['button'])
+
+
+// Main Content Top
+
+const featuresH4 = document.querySelectorAll('h4')[0];
+featuresH4.textContent = (siteContent['main-content']['features-h4'])
+
+const featuresP = document.querySelectorAll('p')[0];
+featuresP.textContent = (siteContent['main-content']['features-content'])
+
+const aboutH4 = document.querySelectorAll('h4')[1];
+aboutH4.textContent = (siteContent['main-content']['about-h4'])
+
+const aboutP = document.querySelectorAll('p')[1];
+aboutP.textContent = (siteContent['main-content']['about-content'])
+
+
+// Main Content Bottom
